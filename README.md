@@ -4,6 +4,20 @@ A simple Python image to ASCII converter.
 It accepts an input image and outputs a text file.
 No colors, for now. Maybe in the future...
 
+## Preview
+
+### Original
+
+![avatar](avatar.jpg)
+
+### Black on white
+
+![black on white background](bow.png)
+
+### White on black
+
+![white on black background](wob.png)
+
 ## Usage
 
 It's quite simple for now, you can use it just setting the input file and letting it do the rest. Optionally it has some arguments.
