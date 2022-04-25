@@ -29,9 +29,15 @@ Replace "filename.ext" with the name of your *input file* **WITH** it's extensio
 
 ## Optional arguments:
 
-### --scale
+### --scale x
 
-I don't know what it does, but I'll figure it out
+Replace "x" with a *float* value (e.g. *0.547* if you will use the *Hack* font)
+
+This parameter adjusts the height based on your font aspect-ratio
+
+You can use [this](https://www.brunildo.org/test/xheight.pl) tool to calculate it's value
+
+If left blank it will default to *0.43* to match the *Courier* font
 
 ### --out filename.txt
 
@@ -55,19 +61,21 @@ This is a flag, and if not used will default to False
 
 If used it will set the default 10 levels of gray ASCII palette to a 70 levels of gray palette
 
-### --reversedscale
+### --reversedgradient
 
 This is a flag, and if not used will default to False
 
 Use it if your background is dark
 
-If used it will reverse-sort the two ASCII palettes
+If used it will reverse-sort the two ASCII palettes, reversing the gradients
 
 ## Credits
 
 The starting point was this [article from GeeksforGeeks](https://www.geeksforgeeks.org/converting-image-ascii-image-python/).
 
 The base code was in [this](https://github.com/electronut/pp/tree/master/ascii) repository from [Electronut Labs](https://github.com/electronut).
+
+A walkthtrough to the original code can be found in the book [Python Playground](http://www.nostarch.com/pythonplayground) published by No Starch Press, USA.
 
 The source code is published here as per the MIT License below:
 
