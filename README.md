@@ -31,13 +31,13 @@ Replace "filename.ext" with the name of your *input file* **WITH** it's extensio
 
 ### --scale x
 
-Replace "x" with a *float* value (e.g. *0.547* if you will use the *Hack* font)
+Replace "x" with a *float* value (e.g. *0.43* if you will use the *Courier* font)
 
 This parameter adjusts the height based on your font aspect-ratio
 
 You can use [this](https://www.brunildo.org/test/xheight.pl) tool to calculate it's value
 
-If left blank it will default to *0.43* to match the *Courier* font
+If left blank it will default to *0.547* to match the *Hack* font
 
 ### --out filename.txt
 
