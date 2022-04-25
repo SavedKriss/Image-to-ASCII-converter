@@ -131,7 +131,7 @@ def main():
         outFile = args.outFile
     
     # set scale default as 0.547 which suits
-    # the "Hacker" font
+    # the "Hack" font
     scale = 0.547
     if args.scale:
         scale = float(args.scale)
