@@ -129,10 +129,10 @@ def main():
     outFile = 'out.txt'
     if args.outFile:
         outFile = args.outFile
-
-    # set scale default as 0.43 which suits
-    # a Courier font
-    scale = 0.43
+    
+    # set scale default as 0.547 which suits
+    # the "Hacker" font
+    scale = 0.547
     if args.scale:
         scale = float(args.scale)
 
