@@ -19,7 +19,7 @@ def getAverageL(image):
     # get average
     return np.average(im.reshape(w*h))
 
-def covertImageToAscii(fileName, cols, scale, moreLevels, reversedScale):
+def covertImageToAscii(fileName, cols, scale, moreLevels, reversedGradient):
     """
     Given Image and dims (rows, cols) returns an m*n list of Images
     """
@@ -34,7 +34,7 @@ def covertImageToAscii(fileName, cols, scale, moreLevels, reversedScale):
     gscale2 = '@%#*+=-:. '
 
     # Reverse ascii gradient
-    if reversedScale:
+    if reversedGradient:
         gscale1 = gscale1[::-1]
         gscale2 = gscale2[::-1]
 
@@ -118,7 +118,7 @@ def main():
     parser.add_argument('--out', dest='outFile', required=False)
     parser.add_argument('--cols', dest='cols', required=False)
     parser.add_argument('--morelevels', dest='moreLevels', action='store_true')
-    parser.add_argument('--reversedscale', dest='reversedScale', action='store_true')
+    parser.add_argument('--reversedgrad', dest='reversedGradient', action='store_true')
 
     # parse args
     args = parser.parse_args()
@@ -143,7 +143,7 @@ def main():
 
     print('generating ASCII art...')
     # convert image to ascii txt
-    aimg = covertImageToAscii(imgFile, cols, scale, args.moreLevels, args.reversedScale)
+    aimg = covertImageToAscii(imgFile, cols, scale, args.moreLevels, args.reversedGradient)
 
     # open file
     f = open(outFile, 'w')
